@@ -85,14 +85,13 @@ complex_IntToChar n = complex_IntToChar (n `div` 10) ++ [int_to_char (n `mod` 10
     
     
 -- takes non-simple repeated encoded str, and returns original un-encoded str 
+-- takes non-simple repeated encoded str, and returns original un-encoded str 
 complex_decode :: String -> String              -- Function 9 
-complex_decode [] = []
+complex_decode "" = ""
+complex_decode {} = []
 complex_decode (x:y:xs) 
-    | xs /= [] = repeat_char x (char_to_int y) ++ (complex_decode xs) -- Function doesnt work, need to come back to it
-    | otherwise = repeat_char x (char_to_int y)                       -- the function stops decoding after first loop, saying that it is a non exhaustive pattern
-
-     
--- complex_CharToInt :: Char -> Integer     -- supporter function for complex_decode 
--- complex_CharToInt (x:xs) = int_to_char x ++ complex_CharToInt xs
+    | is_digit y = repeat_char x (string_to_int digit) ++ complex_decode rest
+    | otherwise = x : complex_decode (y:xs)
+    where (digits, rest) = split_digits(y:xs)
 
 
