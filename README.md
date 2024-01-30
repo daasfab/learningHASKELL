@@ -28,10 +28,7 @@ To donwload and run my code, you will need to:
 
 Feel free to reach out if you have any questions, suggestions, or just want to connect!
 
-Daulet (or just "Daas" 🌟)
-GitHub: daasfab
-Email: daulet.ras@gmail.com
-LinkedIn: https://www.linkedin.com/in/dauletr/
+Daulet (or just "Daas" 🌟) | GitHub: daasfab | Email: daulet.ras@gmail.com
      
 ```bash
 npm install
