@@ -1,7 +1,7 @@
 # My Journey with Haskell & Haskell IO
 
 <p align="center">
-  <img src="haskell_logo.png" alt="Project Logo" width="300" height="150">
+  <img src="haskell_logo.png" alt="Project Logo" width="200" height="200">
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
